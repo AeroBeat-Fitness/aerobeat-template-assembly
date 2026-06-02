@@ -23,7 +23,7 @@ This template stays intentionally bounded to the assembly contract itself. It sh
 - **Primary dependency contract:** `addons.jsonc` at repo root
 - **Current baseline dependencies:**
   - `aerobeat-input-core` pinned at `v0.1.2`
-  - `gut` for repo-local validation
+  - `aerobeat-vendor-godot-unit-test` for repo-local validation
 - **Common assembly additions as needed:**
   - `aerobeat-input-*` gameplay/input addons such as the current camera-first MediaPipe path
   - `aerobeat-ui-core`, `aerobeat-ui-shell-*`, and `aerobeat-ui-kit-*`
@@ -85,7 +85,7 @@ godot --headless --path . --import
 From the repo root:
 
 ```bash
-godot --headless --path . --script addons/gut/gut_cmdln.gd \
+godot --headless --path . --script addons/aerobeat-vendor-godot-unit-test/gut_cmdln.gd \
   -gdir=res://test \
   -ginclude_subdirs \
   -gexit
