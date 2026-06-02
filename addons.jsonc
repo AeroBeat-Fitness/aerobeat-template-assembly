@@ -1,16 +1,16 @@
 {
   "$schema": "https://chickensoft.games/schemas/addons.schema.json",
   "addons": {
-    // Assembly repos own their runtime dependency contract at repo root.
-    // The current v1 assembly foundation mounts input contracts from
-    // res://addons/aerobeat-input-core/ rather than the old universal
-    // aerobeat-core package key.
     "aerobeat-input-core": {
-      "url": "git@github.com:AeroBeat-Workouts/aerobeat-input-core.git",
-      "checkout": "v0.1.2",
-      "subfolder": "/"
+      "url": "../aerobeat-input-core",
+      "subfolder": "/",
+      "source": "symlink"
     },
-    // GUT remains available for repo-local validation in the root assembly project.
+    "aerobeat-tool-headless-manager": {
+      "url": "../aerobeat-tool-headless-manager",
+      "subfolder": "/",
+      "source": "symlink"
+    },
     "gut": {
       "url": "git@github.com:bitwes/Gut.git",
       "checkout": "main",
